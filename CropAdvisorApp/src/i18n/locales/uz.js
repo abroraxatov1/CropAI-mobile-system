@@ -1,0 +1,272 @@
+export default {
+  common: {
+    appName: 'Tuproq Tahlili',
+    save: 'Saqlash',
+    cancel: 'Bekor qilish',
+    continue: 'Davom etish',
+    back: 'Ortga',
+    delete: 'O\u02bbchirish',
+    edit: 'Tahrirlash',
+    reset: 'Standart holatga qaytarish',
+    loading: 'Yuklanmoqda...',
+    error: 'Xatolik',
+    retry: 'Qayta urinish',
+    yes: 'Ha',
+    no: "Yo'q",
+    ok: 'OK',
+    share: "Ulashish",
+    close: 'Yopish',
+    done: 'Tayyor',
+    percent: 'foiz',
+  },
+
+  home: {
+    title: 'Tuproq Tahlili',
+    subtitle: "Tuproq ko'rsatkichlari asosida eng mos ekinni aniqlang",
+    uploadCard: "Ma'lumotlarni yuklash",
+    uploadCardDesc: "Sensordan olingan Excel (.xls/.xlsx) faylni yuklang",
+    manualCard: "Ma'lumotlarni kiritish",
+    manualCardDesc: "Ko'rsatkichlarni qo'lda kiriting",
+    historyCard: 'Avvalgi tahlil natijalari',
+    historyCardDesc: "O'tgan tahlillar tarixini ko'ring",
+    cropInfoCard: 'Ekinlar haqida ma\u02bblumot',
+    cropInfoCardDesc: "7 ta ekinning o'sish sharoitlari",
+    settingsCard: 'Sozlamalar',
+    settingsCardDesc: 'Til va ilova sozlamalari',
+    modelBadge: 'AI model: 7 ta ekin \u00b7 18 ta tuproq ko\u02bbrsatkichi',
+  },
+
+  upload: {
+    title: "Ma'lumotlarni yuklash",
+    instructions:
+      "8-in-1 tuproq sensori (\u201cSoil Detector\u201d ilovasi) orqali olingan Excel faylni tanlang. Ilova avtomatik ravishda pH, EC (o'tkazuvchanlik), N, P, K qiymatlarini aniqlab, birliklarni model talab qiladigan ko'rinishga o'tkazadi.",
+    pickButton: 'Excel faylni tanlash',
+    pickAgain: 'Boshqa fayl tanlash',
+    parsing: 'Fayl o\u02bbqilmoqda...',
+    invalidFile:
+      "Faylda kerakli ustunlar (N, P, K) topilmadi. Iltimos, sensor eksport qilgan asl faylni yuklang.",
+    invalidFileTitle: "Fayl tanib bo'lmadi",
+    noRowsFound: "Faylda o'qishga yaroqli qatorlar topilmadi.",
+    rowsFoundTitle: '{count} ta o\u2019lchov topildi',
+    rowsFoundDesc: "Tahlil qilmoqchi bo'lgan o'lchovni tanlang:",
+    rowLabel: "O'lchov",
+    timeLabel: 'Vaqt',
+    useThisRow: 'Ushbu o\u02bblchovni tanlash',
+    extractedTitle: "Faylan olingan qiymatlar",
+    reviewHint:
+      "Quyida faylan olingan 5 ta ko'rsatkich va model uchun avtomatik hisoblangan qo'shimcha qiymatlar keltirilgan. Kerak bo'lsa, ularni tahrirlashingiz mumkin.",
+    proceedButton: "Ko'rib chiqish va tahlil qilish",
+    formatHelpTitle: 'Fayl formati qanday bo\u02bblishi kerak?',
+    formatHelpText:
+      "Excel faylida quyidagi ustunlar bo\u02bblishi kerak: pH, Conductivity (EC), N, P, K. Har bir katakda son va o\u02bblchov birligi birga yozilgan bo\u02bblishi mumkin (masalan, \u201c790.0us/cm\u201d yoki \u201c39mg/kg\u201d) \u2014 ilova ularni avtomatik ajratib oladi.",
+  },
+
+  manualEntry: {
+    title: "Ma'lumotlarni kiritish",
+    sensorSectionTitle: 'Sensordan olinadigan ko\u02bbrsatkichlar',
+    sensorSectionDesc:
+      '8-in-1 tuproq sensori aniqlay oladigan 5 ta asosiy ko\u02bbrsatkich',
+    derivedSectionTitle: "Qo'shimcha tuproq ko'rsatkichlari",
+    derivedSectionDesc:
+      "Bu qiymatlar yuqoridagi 5 ta ko'rsatkich asosida taxminiy hisoblab chiqiladi va zarurat bo'lsa qo'lda o'zgartirilishi mumkin.",
+    estimatedBadge: 'Taxminiy',
+    editedBadge: "O'zgartirilgan",
+    resetAllDefaults: 'Barchasini qayta hisoblash',
+    analyzeButton: 'Tahlil qilish',
+    analyzing: 'Tahlil qilinmoqda...',
+    invalidValueError: "Iltimos, to'g'ri son kiriting",
+    outOfRangeWarning: "Diqqat: bu qiymat model o'rgangan odatiy oraliqdan (\u2019{min}\u2019 \u2013 \u2019{max}\u2019 \u2019{unit}\u2019) tashqarida",
+    selectPlaceholder: 'Tanlang',
+  },
+
+  featureLabels: {
+    qatlam: 'Namuna olingan qatlam chuqurligi',
+    mexanikTarkib: 'Mexanik tarkib (tuproq turi)',
+    dalaNam: 'Dala nam sig\u02bbimi',
+    zichlik: 'Tuproq zichligi',
+    ph: 'pH (kislotalilik)',
+    ec: "Elektr o'tkazuvchanlik (EC)",
+    n: 'Azot (N)',
+    p: 'Fosfor (P)',
+    k: 'Kaliy (K)',
+    gumus: 'Gumus (organik modda)',
+    mg: 'Magniy (Mg)',
+    s: 'Oltingugurt (S)',
+    zn: 'Rux (Zn)',
+    mn: 'Marganets (Mn)',
+    b: 'Bor (B)',
+    fe: 'Temir (Fe)',
+    cu: 'Mis (Cu)',
+    mikroorganizmlar: 'Mikroorganizmlar soni',
+  },
+
+  featureShort: {
+    qatlam: 'Qatlam',
+    mexanikTarkib: 'Tarkib',
+    dalaNam: 'Dala nami',
+    zichlik: 'Zichlik',
+    ph: 'pH',
+    ec: 'EC',
+    n: 'N',
+    p: 'P',
+    k: 'K',
+    gumus: 'Gumus',
+    mg: 'Mg',
+    s: 'S',
+    zn: 'Zn',
+    mn: 'Mn',
+    b: 'B',
+    fe: 'Fe',
+    cu: 'Cu',
+    mikroorganizmlar: 'Mikroorganizm',
+  },
+
+  categoryValues: {
+    qatlam: {
+      '0-20': '0\u201320 sm',
+      '0-30': '0\u201330 sm',
+      '20-40': '20\u201340 sm',
+      '40-60': '40\u201360 sm',
+    },
+    mexanikTarkib: {
+      Gil: 'Gil (og\u02bbir loy)',
+      Loy: 'Loy',
+      Loyqa: "Loyqa (chang loy)",
+      Qum: 'Qum',
+      Qumoq: 'Qumoq',
+      'Yengil qum': 'Yengil qumloq',
+    },
+  },
+
+  results: {
+    title: 'Tahlil natijasi',
+    recommended: 'Tavsiya etiladi',
+    matchTitle: 'Moslik darajasi',
+    subtitle: "Tuproq ko'rsatkichlaringizga eng mos ekinlar:",
+    otherOptions: 'Boshqa variantlar',
+    viewCropInfo: "Ekin haqida batafsil",
+    compareTitle: "Kiritilgan qiymatlar bilan solishtirish",
+    yourSoil: 'Sizning tuprog\u02bbingiz',
+    idealRange: 'Tavsiya etilgan oraliq',
+    saveNotice: 'Natija tarixga saqlandi',
+    newAnalysis: 'Yangi tahlil',
+    backHome: 'Bosh sahifa',
+    shareResult: "Natijani ulashish",
+    disclaimerShort:
+      "Bu natija dastlabki tavsiya bo'lib, mutaxassis agronom xulosasi o'rnini bosmaydi.",
+  },
+
+  history: {
+    title: 'Avvalgi tahlil natijalari',
+    empty: "Hozircha hech qanday tahlil saqlanmagan",
+    emptyHint: "Birinchi tahlilni bajarish uchun bosh sahifadan boshlang",
+    clearAll: 'Barchasini tozalash',
+    confirmClearTitle: "Tarixni tozalash",
+    confirmClearText:
+      "Barcha saqlangan tahlil natijalari o'chirilsinmi? Bu amalni ortga qaytarib bo'lmaydi.",
+    deleteOne: "O'chirish",
+    savedOn: 'Sana',
+    sourceUpload: 'Excel fayldan',
+    sourceManual: "Qo'lda kiritilgan",
+    itemsCount: '{count} ta yozuv',
+  },
+
+  cropInfo: {
+    title: 'Ekinlar haqida ma\u02bblumot',
+    subtitle: "Model tanib oladigan 7 ta ekinning o'sish sharoitlari",
+    idealPh: 'Tavsiya etilgan pH',
+    waterNeed: "Suvga ehtiyoj",
+    season: "O'sish mavsumi",
+    keyNeeds: "Asosiy oziqa talabi",
+    notes: 'Qo\u02bbshimcha',
+  },
+
+  crops: {
+    "Bug'doy": {
+      name: "Bug'doy",
+      description:
+        "Sovuq mavsumga chidamli g'alla ekini. Neytral yoki unga yaqin pH va yetarli azotni talab qiladi.",
+      water: "O'rtacha",
+      season: "Kuzgi / bahorgi",
+      npk: "O'rtacha N, past-o'rtacha P va K",
+      notes: "Sho'rlanishga nisbatan o'rtacha chidamli.",
+    },
+    Kartoshka: {
+      name: 'Kartoshka',
+      description:
+        "Bo'sh, yaxshi drenajlangan va biroz nordon tuproqni yaxshi ko'radi. Kaliyga talabi yuqori.",
+      water: "Yuqori va barqaror",
+      season: 'Bahorgi',
+      npk: "Yuqori K, o'rtacha N va P",
+      notes: "Zich va og'ir loy tuproqlarda tuganak rivojlanishi susayadi.",
+    },
+    Loviya: {
+      name: 'Loviya',
+      description:
+        "Dukkakli ekin, ildizidagi bakteriyalar yordamida havodagi azotni o'zlashtiradi, shu sabab azot talabi past.",
+      water: "O'rtacha",
+      season: 'Bahorgi / yozgi',
+      npk: "Past N (o'zi biriktiradi), o'rtacha P va K",
+      notes: "Sho'rlanish va qattiq nordon tuproqqa sezgir.",
+    },
+    "Makkajo'xori": {
+      name: "Makkajo'xori",
+      description:
+        "Issiqsevar, tez o'suvchi don ekini. Vegetatsiya davomida ko'p azot talab qiladi.",
+      water: 'Yuqori',
+      season: 'Bahorgi / yozgi',
+      npk: "Yuqori N, o'rtacha-yuqori P va K",
+      notes: "Organik moddaga boy, yaxshi namlik ushlaydigan tuproqni yaxshi ko'radi.",
+    },
+    Paxta: {
+      name: 'Paxta',
+      description:
+        "Issiq iqlim va uzun quyoshli kunlarni talab qiladigan tolali ekin. Boshqa ekinlarga nisbatan sho'rlanishga chidamliroq.",
+      water: "O'rtacha-yuqori",
+      season: 'Bahorgi / yozgi',
+      npk: "Yuqori K, o'rtacha-yuqori N",
+      notes: "O'zbekiston sharoitida keng tarqalgan, biroz ishqoriy tuproqqa moslashgan.",
+    },
+    Qalampir: {
+      name: 'Qalampir',
+      description:
+        "Iliq iqlimni talab qiluvchi sabzavot ekini. Tuproq sho'rlanishiga va suv taqchilligiga sezgir.",
+      water: "O'rtacha, barqaror",
+      season: 'Bahorgi / yozgi',
+      npk: "O'rtacha N va K, yetarli mikroelementlar",
+      notes: "Past EC (sho'rlanish darajasi) va yaxshi drenajni talab qiladi.",
+    },
+    Sabzi: {
+      name: 'Sabzi',
+      description:
+        "Ildizmevali sabzavot, bo'sh va chuqur, tosh-kesaklardan xoli tuproqni talab qiladi.",
+      water: "O'rtacha",
+      season: 'Bahorgi / kuzgi',
+      npk: "O'rtacha K (ildiz rivoji uchun), past-o'rtacha N",
+      notes: "Zich (yuqori zichlikdagi) tuproqda ildizmeva shakli buziladi.",
+    },
+  },
+
+  settings: {
+    title: 'Sozlamalar',
+    language: 'Til',
+    languageDesc: "Ilova tilini tanlang",
+    about: 'Ilova haqida',
+    aboutVersion: 'Versiya',
+    aboutModel: 'Model haqida',
+    aboutModelText:
+      "Ilova mashinaviy o'qitilgan (XGBoost) klassifikatsiya modeli asosida ishlaydi. Model 18 ta tuproq ko'rsatkichi asosida 7 ta ekindan qaysi biri tuproqqa eng mos kelishini bashorat qiladi.",
+    disclaimer: "Muhim eslatma",
+    disclaimerText:
+      "Ushbu ilova tavsiyalari faqat dastlabki yo'l-yo'riq sifatida xizmat qiladi. Yakuniy qaror qabul qilishdan oldin malakali agronom bilan maslahatlashish tavsiya etiladi.",
+    dataFormatHelp: "Fayl formati bo'yicha yordam",
+    clearHistory: "Tahlil tarixini tozalash",
+    developer: 'Ishlab chiquvchi',
+  },
+
+  languages: {
+    uz: "O'zbekcha",
+    en: 'English',
+    ru: '\u0420\u0443\u0441\u0441\u043a\u0438\u0439',
+  },
+};

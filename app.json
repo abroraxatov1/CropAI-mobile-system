@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Tuproq Tahlili",
+    "slug": "tuproq-tahlili-crop-advisor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F4F8F1",
+    "scheme": "cropadvisor",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "uz.cropadvisor.soilanalysis"
+    },
+    "android": {
+      "package": "uz.cropadvisor.soilanalysis",
+      "adaptiveIcon": {
+        "backgroundColor": "#E7F2E1",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#2E7D32"
+        }
+      ]
+    ],
+    "extra": {
+      "appDescriptionUz": "8-in-1 tuproq sensori ma'lumotlari asosida ekin tavsiya qiluvchi ilova"
+    }
+  }
+}
