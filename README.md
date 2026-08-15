@@ -3,15 +3,10 @@
 Tuproq sensori (yoki qo'lda kiritilgan) ma'lumotlari asosida, oldindan
 o'qitilgan XGBoost klassifikatsiya modeli yordamida 7 ta ekindan (Bug'doy,
 Kartoshka, Loviya, Makkajo'xori, Paxta, Qalampir, Sabzi) qaysi biri tuproqqa
-eng mos kelishini foiz ko'rsatkichida aniqlaydigan React Native (Expo SDK 54)
-mobil ilovasi.
+eng mos kelishini foiz ko'rsatkichida aniqlaydigan sun'iy intellektga asoslangan mobil ilova.
 
 Model **butunlay qurilma ichida (on-device)** ishlaydi — internetga yoki
-serverga ehtiyoj yo'q. Model original `crop_recommendation_model_v1.joblib`
-(XGBoost, 300 ta boosting round × 7 klass = 2100 ta daraxt) fayli asosida
-`assets/model/model_data.dat` ga eksport qilingan va JavaScript'da 1:1 qayta
-amalga oshirilgan (Python model bilan solishtirilganda ~1e-6 aniqlikda mos
-keladi).
+serverga ehtiyoj yo'q. 
 
 ## 📱 Ishga tushirish (Expo Go orqali)
 
