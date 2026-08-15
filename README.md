@@ -1,6 +1,6 @@
-# 🌱 Tuproq Tahlili — Ekin Tavsiya Ilovasi
+# 🌱 Tuproq tarkibini intellektual tahlil qilish asosida ekin tavfsiya qilish ilovasi
 
-8-in-1 tuproq sensori (yoki qo'lda kiritilgan) ma'lumotlari asosida, oldindan
+Tuproq sensori (yoki qo'lda kiritilgan) ma'lumotlari asosida, oldindan
 o'qitilgan XGBoost klassifikatsiya modeli yordamida 7 ta ekindan (Bug'doy,
 Kartoshka, Loviya, Makkajo'xori, Paxta, Qalampir, Sabzi) qaysi biri tuproqqa
 eng mos kelishini foiz ko'rsatkichida aniqlaydigan React Native (Expo SDK 54)
@@ -103,19 +103,4 @@ src/
 assets/model/model_data.dat — eksport qilingan model (~10 MB)
 ```
 
-## ⚠️ Muhim eslatma
 
-Ushbu ilova tavsiyalari faqat **dastlabki yo'l-yo'riq** sifatida xizmat
-qiladi va mutaxassis agronom xulosasi o'rnini bosmaydi. Muhim qarorlar
-qabul qilishdan oldin malakali mutaxassis bilan maslahatlashish tavsiya
-etiladi.
-
-## 🔧 Ishlab chiquvchilar uchun
-
-- `npm run android` / `npm run ios` / `npm run web` — mos platformada ishga
-  tushirish.
-- Model qayta eksport qilinishi kerak bo'lsa (masalan, model yangilansa),
-  `assets/model/model_data.dat` faylini xuddi shu tuzilishda (feature_names,
-  data_min/max, medians, tree_offsets, node_feature/thresh/yes/no,
-  base_score, classes) qayta yaratish kifoya — JS kodini o'zgartirish shart
-  emas.
